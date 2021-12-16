@@ -13,7 +13,7 @@ recognition.onresult=function run(event){
 function speak(){
   var synth=window.speechSynthesis;
   speak_data=document.getElementById("textbox").value;
-  var utterThis=new SpeechSynthesisUtterancs(speak_data);
+  var utterThis=new SpeechSynthesisUtterance(speak_data);
   synth.peek(utterThis);
   Webcam.attach(camera);
 }
